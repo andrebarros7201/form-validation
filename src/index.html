@@ -5,5 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= htmlWebpackPlugin.options.title%></title>
   </head>
-  <body></body>
+  <body>
+    <div class="content">
+      <form>
+        <span>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" required />
+        </span>
+        <span>
+          <label for="country">Country: </label>
+          <select name="country" id="country" required>
+            <option value="pt">Portugal</option>
+            <option value="es">Spain</option>
+            <option value="fr">France</option>
+            <option value="it">Italy</option>
+            <option value="de">Germany</option>
+          </select>
+        </span>
+        <span>
+          <label for="zip">Zip Code</label>
+          <input type="number" name="zip" id="zip" required />
+        </span>
+        <span>
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" required />
+        </span>
+        <span>
+          <label for="confirm-password">Confirm Password</label>
+          <input
+            type="password"
+            name="confirm-password"
+            id="confirm-password" />
+        </span>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
 </html>
