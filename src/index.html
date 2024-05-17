@@ -7,12 +7,13 @@
   </head>
   <body>
     <div class="content">
-      <form>
-        <span>
+      <form novalidate>
+        <span class="span-input" aria-live="polite">
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" required />
+          <span class="error" aria-live="polite"></span>
         </span>
-        <span>
+        <span class="span-input">
           <label for="country">Country: </label>
           <select name="country" id="country" required>
             <option value="pt">Portugal</option>
@@ -21,21 +22,25 @@
             <option value="it">Italy</option>
             <option value="de">Germany</option>
           </select>
+          <span class="error" aria-live="polite"></span>
         </span>
-        <span>
+        <span class="span-input" aria-live="polite">
           <label for="zip">Zip Code</label>
           <input type="number" name="zip" id="zip" required />
+          <span class="error" aria-live="polite"></span>
         </span>
-        <span>
+        <span class="span-input" aria-live="polite">
           <label for="password">Password</label>
           <input type="password" name="password" id="password" required />
+          <span class="error" aria-live="polite"></span>
         </span>
-        <span>
+        <span class="span-input aria-live="polite">
           <label for="confirm-password">Confirm Password</label>
           <input
             type="password"
             name="confirm-password"
             id="confirm-password" />
+          <span class="error" aria-live="polite"></span>
         </span>
         <button id="submit">Submit</button>
       </form>
